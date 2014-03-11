@@ -1,0 +1,95 @@
+
+<!DOCTYPE html
+  SYSTEM "html">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head><meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+      
+      <meta charset="utf-8" />
+      <title>Antenes</title>
+      <meta content="width=device-width, initial-scale=1.0, minimum-scale=1" name="viewport" />
+      <meta content="" name="description" />
+      <meta content="" name="author" />
+     <title>Anotacions Demo</title>
+
+   </head>
+     <body data-offset="550" data-spy="scroll" data-target="#position-bar">
+    
+                  <div class="row-fluid sect0">
+                     <h2 class="titol-seccio" id="d22e126">
+                        <h2 class="titol-seccio" id="w24ab1b3b5">Introducció</h2>
+                     </h2>
+                     <div class="row-fluid">
+                        <div class="span9">
+                           <blockquote class="text-cita">
+                              <p style="font-size:11px">Una invenció efectiva que no s'’'arriba a industrialitzar és una injustícia de
+                                 la societat. El mèrit s'’'ha de traduir en èxit.
+                                 
+                              </p>
+                              <p style="font-size:11px">Thomas A. Edison</p>
+                           </blockquote>
+                           <div class="para" id="w24ab1b3b5b5">Teoria, fonaments fisicomatemàtics, disseny, anàlisi, temes pràctics i aplicacions
+                              són els ingredients que formen aquesta obra que posa a l'’'abast de l'’'enginyer
+                              una introducció bàsica i general a les antenes.
+                              
+                           </div>
+                           <div class="para" id="w24ab1b3b5b7">Des d'’'un punt de vista històric, el punt de partida més general del fenomen de
+                              la radiació electromagnètica el trobem en les equacions de Maxwell (1831-1879), fruit
+                              no
+                              solament del científic escocès, sinó també d'’'un ingent nombre de cèlebres
+                              fisicomatemàtics (Gauss, Ampere, Faraday, Coulomb, Lenz, Lorentz, Lorenz, etc.).
+                              Aquestes equacions van ser demostrades experimentalment per Hertz (1857-1894), qui,
+                              a
+                              partir d'’'una antena de tipus fil com les estudiades en el mòdul 3, va demostrar
+                              l'’'emissió i la recepció d'’'ones electromagnètiques.
+                              
+                           </div>
+                           <div class="para" id="w24ab1b3b5b9">Anys més tard, l'’'italià Marconi (1874-1937) va iniciar la revolució sense fil
+                              (<i>wireless</i>) mitjançant la transmissió transatlàntica entre
+                              Gal·les i Terranova. Sense menysprear Marconi, apareix el físic català Francesc Salvà
+                              (1751-1828), que, molt abans que Marconi, promulgava en un article (16 de desembre
+                              de
+                              1795) que no calia cap cable per a transmetre senyals entre dos punts distants.
+                              
+                              
+                           </div>
+                           <div class="para" id="w24ab1b3b5c11">Sigui com sigui, els treballs incipients de l'’'època han servit perquè avui dia
+                              les antenes siguin un element indispensable de les nostres vides (comunicacions de
+                              televisió, satèl·lits, telefonia mòbil, RFID, connexions WI-FI, radionavegació,
+                              domòtica). I això és solament el principi d'’'una era que segur que estarà marcada
+                              per la revolució sense fil.
+                              
+                           </div>
+                        </div>
+                        <div class="span3"></div>
+                     </div>
+                  </div>
+				  <script src="../lib/jquery-1.9.1.js"></script>
+				  <script src="../lib/annotator-full.1.2.9/annotator-full.min.js"></script>
+              <script src="../lib/jquery-i18n-master/jquery.i18n.min.js"></script>
+              <script src="../lib/jquery.dateFormat.js"></script>
+            <script src="../locale/en/annotator.js"></script>
+              <link rel="stylesheet" href="../lib/annotator-full.1.2.9/annotator.min.css">
+              <link rel="stylesheet" href="../src/css/style.css">
+              <script src="../src/view_annotator.js"></script>
+               <script>
+                   jQuery(function ($) {
+                      $.i18n.load(i18n_dict);
+                   // Customise the default plugin options with the third argument.
+                    var annotator = $('body').annotator().annotator().data('annotator');
+                    var propietary = 'demoUser';
+                    annotator.addPlugin('Permissions', {
+                        user: propietary,
+                        permissions: {
+                            'read': [propietary],
+                            'update': [propietary],
+                            'delete': [propietary],
+                            'admin': [propietary]
+                        },
+                        showViewPermissionsCheckbox: true,
+                        showEditPermissionsCheckbox: false
+                    });
+                  $('body').annotator().annotator('addPlugin', 'visorAnotacions');
+               });
+               </script>
+	  </body>
+</html>
