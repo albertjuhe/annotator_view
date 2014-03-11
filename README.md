@@ -45,3 +45,5 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
             $('body').annotator().annotator('addPlugin', 'visorAnotacions');});
   </script>
 ```
+##Demo
+Demo in demo/anotacions.html
