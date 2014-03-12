@@ -100,7 +100,7 @@
     visorAnotacions.prototype.onAnnotationDeleted = function(annotation) {
       
       $( "li" ).remove( "#annotation-"+annotation.id );      
-      $('#count-anotations').text( $('.container-anotacions').children('li').length - 1);
+      $('#count-anotations').text( $('.container-anotacions').children('li').length);
       
     };
 
