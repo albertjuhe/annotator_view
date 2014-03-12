@@ -46,6 +46,9 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
   </script>
 ```
 ##Development
+
+The view annoator plugin, use the property categorize, to change the annotation color category (default value hightligt, defined in the css), and a order property, to sort the annotations in the panel.
+
 Each annotation in the right panel needs a unique Id, annotator when use a back end assigns a Unique Id to each annotation afert creation, but in the demon below I don't use a back end, for this reason  we generate the unique Id with a function.
 
 ##Demo
