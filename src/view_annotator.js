@@ -60,7 +60,7 @@
     visorAnotacions.prototype.onButtonClick = function(event, type) {
       var item;
       item = $(event.target).parents('.annotator-marginviewer-element');
-      $(this).parent( "li" ).remove();
+      //$(this).parent( "li" ).remove();
       return this.annotator.deleteAnnotation(item.data('annotation'));
     };
 
@@ -72,7 +72,8 @@
       $(event.target).attr('src', '../src/img/icono_eliminar.png');      
     };
 
-    visorAnotacions.prototype.onAnnotationCreated = function(annotation) {  
+    visorAnotacions.prototype.onAnnotationCreated = function(annotation) { 
+
       this.createReferenceAnnotation(annotation);
       $('#count-anotations').text( $('.container-anotacions').children('li').length );
     };
@@ -141,7 +142,8 @@
       if (annotation.id != null) {
         anotation_reference = "annotation-"+annotation.id;
       } else {
-        anotation_reference = "annotator-temp";
+        annotation.id = this.uniqId();
+        anotation_reference = "annotation-"+annotation.id;
       }
 
       var anotacio_capa =  '<li class="annotator-marginviewer-element" id="'+anotation_reference +'">'+this.mascaraAnnotation(annotation)+'</li>';
@@ -170,7 +172,9 @@
       $(anotacioObject).fadeIn('fast');
     };
 
-  
+    visorAnotacions.prototype.uniqId = function() {
+      return Math.round(new Date().getTime() + (Math.random() * 100));
+    } 
 
     return visorAnotacions;
 
