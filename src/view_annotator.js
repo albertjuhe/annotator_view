@@ -60,7 +60,6 @@
     visorAnotacions.prototype.onButtonClick = function(event, type) {
       var item;
       item = $(event.target).parents('.annotator-marginviewer-element');
-      //$(this).parent( "li" ).remove();
       return this.annotator.deleteAnnotation(item.data('annotation'));
     };
 
@@ -120,6 +119,7 @@
         borrar="";
         }
 
+        //If you have instal.led a plug-in for categorize anotations, panel viewer can get this information with the category atribute
       if (annotation.category != null) {
         anotation_color = annotation.category;
       } else {
@@ -156,7 +156,7 @@
           $element= jQuery("#"+annotation.id);   
           if (!$element.length) {
             $element= jQuery("#"+annotation.order);   
-            referencia_anotacio = annotation.order; //Situem l'anotació amb l'ordre ja que s'ha produit un error i no surt el hightlight
+            referencia_anotacio = annotation.order; //If exists a sorted annotations we put it in the right order, using order attribute
           }
 
           if ($element.length) {
@@ -167,7 +167,7 @@
             }, 2000);
           } 
       });
-      //Afegim informació de l'anotació en l'emelemnt data per poder esborarr-la
+      //Adding annotation to data element for delete and link
       $('#'+anotation_reference).data('annotation', annotation);
       $(anotacioObject).fadeIn('fast');
     };
