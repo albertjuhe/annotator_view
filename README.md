@@ -11,8 +11,8 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
 
 
 ```html
-	  <script src="../lib/jquery-1.9.1.js"></script>
-	  <script src="../lib/annotator-full.1.2.9/annotator-full.min.js"></script>
+    <script src="../lib/jquery-1.9.1.js"></script>
+    <script src="../lib/annotator-full.1.2.9/annotator-full.min.js"></script>
     <!-- Locale for language -->
     <script src="../lib/jquery-i18n-master/jquery.i18n.min.js"></script>
     <!-- For show the annotation creation date -->
@@ -45,5 +45,8 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
             $('body').annotator().annotator('addPlugin', 'visorAnotacions');});
   </script>
 ```
+##Development
+Each annotation in the right panel needs a unique Id, annotator when use a back end assigns a Unique Id to each annotation, this will be correct Id to assign to each annotation in the view panel, but in this implementation, with no store plug in, we generate the unique Id with a function.
+
 ##Demo
 Demo in demo/anotacions.html
