@@ -143,6 +143,11 @@
         anotation_reference = "annotation-"+annotation.id;
       } else {
         annotation.id = this.uniqId();
+        //We need to add this id to the text anotation
+        $element = $('span.annotator-hl:not([id])');
+        if ($element) {
+          $element.prop('id',annotation.id);
+        }
         anotation_reference = "annotation-"+annotation.id;
       }
 
@@ -150,20 +155,20 @@
       var malert = i18n_dict.anotacio_lost
 
       anotacioObject = $(anotacio_capa).appendTo('.container-anotacions').click(function(event) {
-          var  viewportHeight = jQuery(window).height();
-          var referencia_anotacio = annotation.id;
+          var viewPanelHeight = jQuery(window).height();
+          var annotation_reference = annotation.id;
 
-          $element= jQuery("#"+annotation.id);   
+          $element= jQuery("#"+annotation.id); 
           if (!$element.length) {
             $element= jQuery("#"+annotation.order);   
-            referencia_anotacio = annotation.order; //If exists a sorted annotations we put it in the right order, using order attribute
+            annotation_reference = annotation.order; //If exists a sorted annotations we put it in the right order, using order attribute
           }
 
           if ($element.length) {
             elOffset = $element.offset();
             $(this).children(".annotator-marginviewer-quote").toggle();
             $('html, body').animate({
-              scrollTop: $("#"+referencia_anotacio).offset().top - (viewportHeight/2)
+              scrollTop: $("#"+annotation_reference).offset().top - (viewPanelHeight/2)
             }, 2000);
           } 
       });
@@ -175,6 +180,17 @@
     visorAnotacions.prototype.uniqId = function() {
       return Math.round(new Date().getTime() + (Math.random() * 100));
     } 
+
+    visorAnotacions.prototype.findAnnotation = function(STR_XPATH) {
+      var xresult = document.evaluate(STR_XPATH, document, null, XPathResult.ANY_TYPE, null);
+      var xnodes = [];
+      var xres;
+      while (xres = xresult.iterateNext()) {
+          xnodes.push(xres);
+      }
+
+      return xnodes;
+    }
 
     return visorAnotacions;
 
