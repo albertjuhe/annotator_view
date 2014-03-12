@@ -19,6 +19,8 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
     <script src="../lib/jquery.dateFormat.js"></script>
     <!-- File with the translations -->
     <script src="../locale/en/annotator.js"></script>
+    <!-- Scroll panel -->
+    <script src="../lib/jquery.slimscroll.js"></script>
     <!-- annotator -->
     <link rel="stylesheet" href="../lib/annotator-full.1.2.9/annotator.min.css">
     <link rel="stylesheet" href="../src/css/style.css">
