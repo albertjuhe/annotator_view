@@ -4,10 +4,10 @@
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
-  Annotator.Plugin.visorAnotacions = (function(_super) {
-    __extends(visorAnotacions, _super);
+  Annotator.Plugin.AnnotatorViewer = (function(_super) {
+    __extends(AnnotatorViewer, _super);
 
-    visorAnotacions.prototype.events = {
+    AnnotatorViewer.prototype.events = {
       'annotationsLoaded': 'onAnnotationsLoaded',
       'annotationCreated': 'onAnnotationCreated',
       'annotationDeleted': 'onAnnotationDeleted',
@@ -18,22 +18,22 @@
     };
 
 
-    visorAnotacions.prototype.field = null;
+    AnnotatorViewer.prototype.field = null;
 
-    visorAnotacions.prototype.input = null;
+    AnnotatorViewer.prototype.input = null;
 
-    visorAnotacions.prototype.options = {
-      visorAnotacions: {}
+    AnnotatorViewer.prototype.options = {
+      AnnotatorViewer: {}
     };
 
 
-    function visorAnotacions(element, options) {
+    function AnnotatorViewer(element, options) {
       this.onAnnotationCreated = __bind(this.onAnnotationCreated, this);
       this.onAnnotationUpdated = __bind(this.onAnnotationUpdated, this);
       this.onDeleteClick = __bind(this.onDeleteClick, this);
       this.onDeleteMouseover = __bind(this.onDeleteMouseover, this);
       this.onDeleteMouseout = __bind(this.onDeleteMouseout, this);
-      visorAnotacions.__super__.constructor.apply(this, arguments);
+      AnnotatorViewer.__super__.constructor.apply(this, arguments);
 
       $( "body" ).append( this.createAnnotationPanel() );
 
@@ -45,7 +45,7 @@
 
     };
 
-    visorAnotacions.prototype.pluginInit = function() {
+    AnnotatorViewer.prototype.pluginInit = function() {
       var cat, color, i, isChecked, _ref;
       if (!Annotator.supported()) {
         return;
@@ -53,36 +53,36 @@
      
     };
 
-    visorAnotacions.prototype.onDeleteClick = function(event) {
+    AnnotatorViewer.prototype.onDeleteClick = function(event) {
       return this.onButtonClick(event, 'delete');
     };
 
-    visorAnotacions.prototype.onButtonClick = function(event, type) {
+    AnnotatorViewer.prototype.onButtonClick = function(event, type) {
       var item;
       item = $(event.target).parents('.annotator-marginviewer-element');
       return this.annotator.deleteAnnotation(item.data('annotation'));
     };
 
-     visorAnotacions.prototype.onDeleteMouseover = function(event) {
+     AnnotatorViewer.prototype.onDeleteMouseover = function(event) {
        $(event.target).attr('src', '../src/img/papelera_over.png');
     };
 
-     visorAnotacions.prototype.onDeleteMouseout = function(event) {
+     AnnotatorViewer.prototype.onDeleteMouseout = function(event) {
       $(event.target).attr('src', '../src/img/icono_eliminar.png');      
     };
 
-    visorAnotacions.prototype.onAnnotationCreated = function(annotation) { 
+    AnnotatorViewer.prototype.onAnnotationCreated = function(annotation) { 
 
       this.createReferenceAnnotation(annotation);
       $('#count-anotations').text( $('.container-anotacions').children('li').length );
     };
 
-    visorAnotacions.prototype.onAnnotationUpdated = function(annotation) {
+    AnnotatorViewer.prototype.onAnnotationUpdated = function(annotation) {
 
       $( "#annotation-"+annotation.id ).html( this.mascaraAnnotation(annotation) );       
     };
 
-    visorAnotacions.prototype.onAnnotationsLoaded = function(annotations) {
+    AnnotatorViewer.prototype.onAnnotationsLoaded = function(annotations) {
       var annotation;
       $('#count-anotations').text( annotations.length );
       if (annotations.length > 0) {
@@ -96,14 +96,14 @@
     };
 
     
-    visorAnotacions.prototype.onAnnotationDeleted = function(annotation) {
+    AnnotatorViewer.prototype.onAnnotationDeleted = function(annotation) {
       
       $( "li" ).remove( "#annotation-"+annotation.id );      
       $('#count-anotations').text( $('.container-anotacions').children('li').length);
       
     };
 
-    visorAnotacions.prototype.mascaraAnnotation = function(annotation) {     
+    AnnotatorViewer.prototype.mascaraAnnotation = function(annotation) {     
       if (!annotation.data_creacio) annotation.data_creacio = $.now();
 
       var anotacio_compartida = "";      
@@ -130,13 +130,13 @@
       return anotacio_capa;
     };
 
-    visorAnotacions.prototype.createAnnotationPanel = function(annotation) {     
+    AnnotatorViewer.prototype.createAnnotationPanel = function(annotation) {     
       var anotacio_capa =  '<div  class="annotations-list-uoc" style="background-color:#ddd;"><div id="annotations-panel"><span class="rotate" title="'+ i18n_dict.view_annotations +' '+ i18n_dict.pdf_resum +'" style="padding:5px;background-color:#ddd;position: absolute; top:10em;left: -50px; width: 155px; height: 110px;cursor:pointer">'+ i18n_dict.view_annotations +'<span class="label-counter" style="padding:0.2em 0.3em;float:right" id="count-anotations">0</span></span></div><div id="anotacions-uoc-panel" style="height:80%"><ul class="container-anotacions"></ul></div></div>';
       return anotacio_capa;
     };
 
    
-    visorAnotacions.prototype.createReferenceAnnotation = function(annotation) {     
+    AnnotatorViewer.prototype.createReferenceAnnotation = function(annotation) {     
      var anotation_reference = null;
 
       if (annotation.id != null) {
@@ -177,22 +177,13 @@
       $(anotacioObject).fadeIn('fast');
     };
 
-    visorAnotacions.prototype.uniqId = function() {
+    AnnotatorViewer.prototype.uniqId = function() {
       return Math.round(new Date().getTime() + (Math.random() * 100));
     } 
 
-    visorAnotacions.prototype.findAnnotation = function(STR_XPATH) {
-      var xresult = document.evaluate(STR_XPATH, document, null, XPathResult.ANY_TYPE, null);
-      var xnodes = [];
-      var xres;
-      while (xres = xresult.iterateNext()) {
-          xnodes.push(xres);
-      }
+  
 
-      return xnodes;
-    }
-
-    return visorAnotacions;
+    return AnnotatorViewer;
 
   })(Annotator.Plugin);
 
