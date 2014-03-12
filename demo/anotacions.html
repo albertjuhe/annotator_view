@@ -47,6 +47,7 @@ Everyone loved Elizabeth. The passionate and almost reverential attachment with 
 				  <script src="../lib/annotator-full.1.2.9/annotator-full.min.js"></script>
               <script src="../lib/jquery-i18n-master/jquery.i18n.min.js"></script>
               <script src="../lib/jquery.dateFormat.js"></script>
+               <script src="../lib/jquery.slimscroll.js"></script>
             <script src="../locale/en/annotator.js"></script>
               <link rel="stylesheet" href="../lib/annotator-full.1.2.9/annotator.min.css">
               <link rel="stylesheet" href="../src/css/style.css">
@@ -69,6 +70,8 @@ Everyone loved Elizabeth. The passionate and almost reverential attachment with 
                         showEditPermissionsCheckbox: false
                     });
                   $('body').annotator().annotator('addPlugin', 'visorAnotacions');
+                  //Annotation scroll
+                  $('#anotacions-uoc-panel').slimscroll({height: '100%'});
                });
                </script>
 	  </body>
