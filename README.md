@@ -46,7 +46,7 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
   </script>
 ```
 ##Development
-Each annotation in the right panel needs a unique Id, annotator when use a back end assigns a Unique Id to each annotation, this will be correct Id to assign to each annotation in the view panel, but in this implementation, with no store plug in, we generate the unique Id with a function.
+Each annotation in the right panel needs a unique Id, annotator when use a back end assigns a Unique Id to each annotation afert creation, but in the demon below I don't use a back end, for this reason  we generate the unique Id with a function.
 
 ##Demo
 Demo in demo/anotacions.html
