@@ -26,23 +26,25 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
     <script src="../src/view_annotator.js"></script>
     <script>
       jQuery(function ($) {
-          $.i18n.load(i18n_dict);
-         // Customise the default plugin options with the third argument.
-          var annotator = $('body').annotator().annotator().data('annotator');
-          var propietary = 'demoUser';
-          annotator.addPlugin('Permissions', {
+                   $.i18n.load(i18n_dict);
+                   // Customise the default plugin options with the third argument.
+                    var annotator = $('body').annotator().annotator().data('annotator');
+                    var propietary = 'demoUser';
+                    annotator.addPlugin('Permissions', {
                         user: propietary,
                         permissions: {
                             'read': [propietary],
                             'update': [propietary],
                             'delete': [propietary],
                             'admin': [propietary]
-                        },
-                        showViewPermissionsCheckbox: true,
-                        showEditPermissionsCheckbox: false
-            });
-            // Calling annotator viewer plug in -->
-            $('body').annotator().annotator('addPlugin', 'visorAnotacions');});
+                     },
+                     showViewPermissionsCheckbox: true,
+                     showEditPermissionsCheckbox: false
+                    });
+                  $('body').annotator().annotator('addPlugin', 'AnnotatorViewer');
+                  //Annotation scroll
+                  $('#anotacions-uoc-panel').slimscroll({height: '100%'});
+               });
   </script>
 ```
 ##Usage
