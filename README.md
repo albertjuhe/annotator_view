@@ -47,7 +47,7 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
 ```
 ##Development
 
-The view annoator plugin, use the property categorize, to change the annotation color category (default value highligth, defined in the css), and an order property, to sort the annotations in the panel.
+The view annoator plugin, use the property categorize, to change the annotation color category (default value highligth, defined in the css), and an order property to sort the annotations in the panel.
 
 Each annotation in the right panel needs a unique Id, annotator when use a back end, a unique Id is assigned to each annotation after creation, but in the Viewer panel offline I don have this Id, for this reason  we generate the unique Id with a function uniqueId() in the plugin.
 
