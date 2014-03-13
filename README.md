@@ -51,7 +51,7 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
 ```
 ##Usage
 
-The annotations that you create are displayed in the panel. You can delete an anotation, you can acces at the point of text that has been anotated, open and annotation, close an annotation, toggle the panel, scroll it if there are several annotations and a little label where you can view how many annotations are currently.
+The annotations that you create are displayed in the panel. You can delete an anotation, you can acces at the point of text that has been anotated, open an annotation, close an annotation, toggle the panel, scroll the panel if there are several annotations and a little label where you can view how many annotations are currently.
 
 ##Development
 
