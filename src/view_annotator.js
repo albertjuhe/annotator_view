@@ -1,7 +1,7 @@
 /*
 Annotator view panel Plugin v1.0 (https://https://github.com/albertjuhe/annotator_view/)
 Copyright (C) 2014 Albert Juhé Brugué
-License: https://github.com/albertjuhe/annotator_view/licence/License.rst
+License: https://github.com/albertjuhe/annotator_view/License.rst
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
