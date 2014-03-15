@@ -29,7 +29,7 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
     <script>
       jQuery(function ($) {
                    $.i18n.load(i18n_dict);
-                   // Customise the default plugin options with the third argument.
+               
                     var annotator = $('body').annotator().annotator().data('annotator');
                     var propietary = 'demoUser';
                     annotator.addPlugin('Permissions', {
