@@ -53,6 +53,8 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
 
 The annotations that you create are displayed in the panel. You can delete an anotation, you can acces at the point of text that has been anotated, open an annotation, close an annotation, toggle the panel, scroll the panel if there are several annotations and a little label where you can view how many annotations are currently.
 
+You can filters annotations: My annotations and shared annotations.
+
 ##Development
 
 The view annoator plugin, use the property categorize, to change the annotation color category (default value highligth, defined in the css), and an order property to sort the annotations in the panel.
