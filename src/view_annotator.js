@@ -222,7 +222,25 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
               scrollTop: $("#"+annotation_reference).offset().top - (viewPanelHeight/2)
             }, 2000);
           } 
+      })
+      .mouseover(function() {
+        $element = jQuery("span[id="+annotation.id+"]");
+        if ($element.length) {
+          $element.css({
+            "border-color":"#000000",
+            "border-width":"1px",
+            "border-style":"solid"});
+        }
+      })
+      .mouseout(function() {
+        $element = jQuery("span[id="+annotation.id+"]");
+        if ($element.length) {
+          $element.css({
+            "border-width":"0px"});
+        }
       });
+
+      
       //Adding annotation to data element for delete and link
       $('#'+anotation_reference).data('annotation', annotation);
       $(anotacioObject).fadeIn('fast');
