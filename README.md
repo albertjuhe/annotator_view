@@ -63,3 +63,6 @@ Each annotation in the right panel needs a unique Id, annotator when use a back 
 
 ##Demo
 Demo in demo/anotacions.html
+##Complete demo with annotatorjs
+[Demo Frankenstein](http://ec2-54-191-181-65.us-west-2.compute.amazonaws.com:3060/annotation/mary/demo.html) with [backend in nodejs] (https://github.com/albertjuhe/annotator_nodejs_store)
+
