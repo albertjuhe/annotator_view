@@ -43,6 +43,11 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
                      showViewPermissionsCheckbox: true,
                      showEditPermissionsCheckbox: false
                     });
+                  $('body').annotator().annotator('addPlugin', 'Categories',{
+                           errata:'annotator-hl-errata',
+                           destacat:'annotator-hl-destacat',
+                           subratllat:'annotator-hl-subratllat' }
+                     );
                   $('body').annotator().annotator('addPlugin', 'AnnotatorViewer');
                   //Annotation scroll
                   $('#anotacions-uoc-panel').slimscroll({height: '100%'});
