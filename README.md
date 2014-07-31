@@ -26,6 +26,7 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
     <link rel="stylesheet" href="../src/css/style.css">
     <!-- anotator plug in -->
     <script src="../src/view_annotator.js"></script>
+    <script src="../src/categories.js"></script>
     <script>
       jQuery(function ($) {
                    $.i18n.load(i18n_dict);
