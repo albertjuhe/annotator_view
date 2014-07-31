@@ -64,6 +64,12 @@ body {
     height:20px;
 }
 
+.destacat {
+    background: #dfffbf;
+    border: 1px solid #b3b3b3;
+    height:20px;
+}
+
 .hightlight {
     background: #dfffbf;
     border: 1px solid #b3b3b3;
@@ -146,6 +152,11 @@ body {
     float:left;
     left:22.5%;
 
+}
+
+.square {
+    border: 1px solid #b3b3b3;
+    height:20px;
 }
 
 .annotator-marginviewer-element {

@@ -52,6 +52,7 @@ Everyone loved Elizabeth. The passionate and almost reverential attachment with 
               <link rel="stylesheet" href="../lib/annotator-full.1.2.9/annotator.min.css">
               <link rel="stylesheet" href="../src/css/style.css">
               <script src="../src/view_annotator.js"></script>
+              <script src="../src/categories.js"></script>
                <script>
                    jQuery(function ($) {
                       $.i18n.load(i18n_dict);
@@ -70,6 +71,11 @@ Everyone loved Elizabeth. The passionate and almost reverential attachment with 
                         showEditPermissionsCheckbox: false
                     });
                   $('body').annotator().annotator('addPlugin', 'AnnotatorViewer');
+                  $('body').annotator().annotator('addPlugin', 'Categories',{
+                           errata:'annotator-hl-errata',
+                           destacat:'annotator-hl-destacat',
+                           subratllat:'annotator-hl-subratllat' }
+                     );
      
                   //Annotation scroll
                   $('#anotacions-uoc-panel').slimscroll({height: '100%'});
