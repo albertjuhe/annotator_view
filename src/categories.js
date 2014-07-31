@@ -73,6 +73,7 @@
     Categories.prototype.AnnotationViewer = function(viewer, annotations) {
       var annotation;
       var isShared = ""; 
+      var class_label="label";
       
       if (annotations.length > 0) {
         for(i=0, len = annotations.length; i < len; i++) {
@@ -81,8 +82,11 @@
           if (annotation.estat==1 || annotation.permissions.read.length===0 ) {
             isShared = "<img src=\"/annotator/img/Compartido.png\" title=\""+ i18n_dict.share +"\" style=\"margin-left:5px\"/>"
           }
+            if (annotation.propietary==0) {
+            class_label = "label-compartit";
+          }
           $('ul.annotator-widget > li.annotator-item').prepend('<div class="'+annotation.category+'" style="border: 1px solid #b3b3b3;height:6px;margin:4px;padding:4px;"></div>');
-          $( "div.annotator-user" ).html( "<span class='label'>"+annotation.user+"</span>"+isShared);
+          $( "div.annotator-user" ).html( "<span class='"+class_label+"'>"+annotation.user+"</span>"+isShared);
           
         }
       }
