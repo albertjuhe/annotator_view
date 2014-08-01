@@ -26,6 +26,7 @@
       this.annotationCreated = __bind(this.annotationCreated, this);      
       this.AnnotationSection = __bind(this.AnnotationSection, this);
       this.AnnotationCategory = __bind(this.AnnotationCategory, this);
+      this.updateAnnotation = __bind(this.updateAnnotation, this);
 
       this.options.categories = categories;
       Categories.__super__.constructor.apply(this, arguments);
@@ -49,6 +50,8 @@
       //Showing annotations
       this.annotator.subscribe("annotationViewerShown",this.AnnotationViewer);   
 
+      this.annotator.subscribe("annotationUpdated ",this.updateAnnotation);  
+
     };
 
     //After loading annotations we want to change the annotation color and add the annotation id
@@ -70,6 +73,14 @@
     };
 
      //After loading annotations we want to change the annotation color and add the annotation id
+    Categories.prototype.updateAnnotation = function(annotation) {     
+      var category = this.options.categories[annotation.category]; 
+     
+      $(annotation.highlights).attr("class","annotator-hl " + category);   
+     
+    };
+
+     //After loading annotations we want to change the annotation color and add the annotation id
     Categories.prototype.AnnotationViewer = function(viewer, annotations) {
       var annotation;
       var isShared = ""; 
@@ -80,9 +91,9 @@
           annotation = annotations[i]; 
           
           if (annotation.estat==1 || annotation.permissions.read.length===0 ) {
-            isShared = "<img src=\"/annotator/img/Compartido.png\" title=\""+ i18n_dict.share +"\" style=\"margin-left:5px\"/>"
+            isShared = "<img src=\"../src/img/Compartido.png\" title=\""+ i18n_dict.share +"\" style=\"margin-left:5px\"/>"
           }
-            if (annotation.propietary==0) {
+          if (annotation.propietary==0) {
             class_label = "label-compartit";
           }
           $('ul.annotator-widget > li.annotator-item').prepend('<div class="'+annotation.category+'" style="border: 1px solid #b3b3b3;height:6px;margin:4px;padding:4px;"></div>');
