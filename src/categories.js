@@ -62,8 +62,11 @@
       $('#count-anotations').text( annotations.length );
       if (annotations.length > 0) {
         for(i=0, len = annotations.length; i < len; i++) {
-          annotation = annotations[i];        
-          category = _categories[annotation.category];
+          annotation = annotations[i];    
+          var category = "annotator-hl-" + annotation.category;
+          if (annotation.category in _categories) {
+             category = _categories[annotation.category];
+           }           
           $(annotation.highlights).addClass(category);  
           $(annotation.highlights).attr('id', annotation.id ); 
         }
