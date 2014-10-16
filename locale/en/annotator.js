@@ -11,5 +11,7 @@ var i18n_dict = {
                 "view_annotations"         : "View annotations",
                 "doesnot_suport"           : "Sorry your current browser does not support the Annotator",
                 "Edit"                     : "Edit",
-                "Delete"                   : "Delete"
+                "Delete"                   : "Delete",
+                "share"                    : "Shared",
+                "confirm_delete"           : "Do you want to delete this annotation?"
         };

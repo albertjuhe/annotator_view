@@ -94,7 +94,7 @@
           annotation = annotations[i]; 
           
           if (annotation.estat==1 || annotation.permissions.read.length===0 ) {
-            isShared = "<img src=\"../src/img/Compartido.png\" title=\""+ i18n_dict.share +"\" style=\"margin-left:5px\"/>"
+            isShared = "<img src=\"../src/img/shared-icon.png\" title=\""+ i18n_dict.share +"\" style=\"margin-left:5px\"/>"
           }
           if (annotation.propietary==0) {
             class_label = "label-compartit";

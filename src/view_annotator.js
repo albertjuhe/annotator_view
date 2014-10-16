@@ -23,6 +23,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
     __hasProp = {}.hasOwnProperty,
     __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
 
+  //constants
+  var IMAGE_DELETE =  '../src/img/icono_eliminar.png',
+  IMAGE_DELETE_OVER = '../src/img/papelera_over.png',
+  SHARED_ICON = '../src/img/shared-icon.png';
+
   Annotator.Plugin.AnnotatorViewer = (function(_super) {
     __extends(AnnotatorViewer, _super);
 
@@ -32,6 +37,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
       'annotationDeleted': 'onAnnotationDeleted',
       'annotationUpdated': 'onAnnotationUpdated',
       ".annotator-viewer-delete click": "onDeleteClick",
+      ".annotator-viewer-edit click": "onEditClick",
       ".annotator-viewer-delete mouseover": "onDeleteMouseover",
       ".annotator-viewer-delete mouseout": "onDeleteMouseout",
     };
@@ -50,8 +56,12 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
       this.onAnnotationCreated = __bind(this.onAnnotationCreated, this);
       this.onAnnotationUpdated = __bind(this.onAnnotationUpdated, this);
       this.onDeleteClick = __bind(this.onDeleteClick, this);
+      this.onEditClick = __bind(this.onEditClick, this);
       this.onDeleteMouseover = __bind(this.onDeleteMouseover, this);
       this.onDeleteMouseout = __bind(this.onDeleteMouseout, this);
+      this.onCancelPanel = __bind(this.onCancelPanel,this);
+      this.onSavePanel = __bind(this.onSavePanel,this);
+
       AnnotatorViewer.__super__.constructor.apply(this, arguments);
 
       $( "body" ).append( this.createAnnotationPanel() );
@@ -99,21 +109,81 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
     };
 
     AnnotatorViewer.prototype.onDeleteClick = function(event) {
-      return this.onButtonClick(event, 'delete');
+      event.stopPropagation();
+      if(confirm(i18n_dict.confirm_delete)) {
+        this.click;
+        return this.onButtonClick(event, 'edit');
+      }
+      return false;
+    };
+
+     AnnotatorViewer.prototype.onEditClick = function(event) {
+      event.stopPropagation();
+      return this.onButtonClick(event, 'edit');     
     };
 
     AnnotatorViewer.prototype.onButtonClick = function(event, type) {
       var item;
+      //item contains all the annotation information, this information is stored in an attribute called data-annotation.
       item = $(event.target).parents('.annotator-marginviewer-element');
-      return this.annotator.deleteAnnotation(item.data('annotation'));
+      if (type=='delete') return this.annotator.deleteAnnotation(item.data('annotation'));
+      if (type=='edit') { //We want to transform de div to a textarea
+        //Find the text field
+        var annotator_textArea = item.find('div.anotador_text');
+        this.textareaEditor(annotator_textArea,item.data('annotation'));
+       
+      }
+    };
+
+    //Textarea editor controller
+    AnnotatorViewer.prototype.textareaEditor = function(annotator_textArea,item) {
+        //First we have to get the text, if no, we will have an empty text area after replace the div 
+        if ($('li#annotation-'+item.id).find('textarea.panelTextArea').length==0) {
+          var content = item.text;
+          var editableTextArea = $("<textarea class='panelTextArea'>"+content+"</textarea>");
+          annotator_textArea.replaceWith(editableTextArea);
+          editableTextArea.css('height',editableTextArea[0].scrollHeight + 'px');
+          editableTextArea.blur(); //Textarea blur
+          $('<div class="annotator-textarea-controls"></div>').insertAfter(editableTextArea); 
+          var control_buttons = $('.annotator-textarea-controls');
+          $('<a href="#save" class="annotator-panel-save">Save</a>').appendTo(control_buttons).bind("click",{annotation:item},this.onSavePanel);
+          $('<a href="#cancel" class="annotator-panel-cancel">Cancel</a>').appendTo(control_buttons).bind("click", {annotation:item},this.onCancelPanel);
+        }
+    };
+
+    //Event triggered when save the content of the annotation
+    AnnotatorViewer.prototype.onSavePanel = function(event) {
+       var current_annotation = event.data.annotation;
+       var textarea =  $('li#annotation-'+current_annotation.id).find('textarea.panelTextArea');
+       current_annotation.text =  textarea.val();
+       this.annotator.updateAnnotation(current_annotation);
+       this.normalEditor(current_annotation,textarea);
+    };
+
+     //Event triggered when save the content of the annotation
+    AnnotatorViewer.prototype.onCancelPanel = function(event) {
+        var current_annotation = event.data.annotation;
+        var textarea =  $('li#annotation-'+current_annotation.id).find('textarea.panelTextArea');
+        this.normalEditor(current_annotation,textarea);
+
+    };
+
+    //Annotator in a non editable state
+    AnnotatorViewer.prototype.normalEditor = function(annotation,editableTextArea) {
+
+        var buttons = $('li#annotation-'+annotation.id).find('div.annotator-textarea-controls');
+        var textAnnotation = this.removeTags('iframe',annotation.text);
+
+        editableTextArea.replaceWith('<div class="anotador_text">'+textAnnotation+'</div>');
+        buttons.remove();
     };
 
      AnnotatorViewer.prototype.onDeleteMouseover = function(event) {
-       $(event.target).attr('src', '../src/img/papelera_over.png');
+       $(event.target).attr('src',IMAGE_DELETE_OVER);
     };
 
      AnnotatorViewer.prototype.onDeleteMouseout = function(event) {
-      $(event.target).attr('src', '../src/img/icono_eliminar.png');      
+      $(event.target).attr('src', IMAGE_DELETE);      
     };
 
     AnnotatorViewer.prototype.onAnnotationCreated = function(annotation) { 
@@ -148,20 +218,21 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
       
     };
 
-    AnnotatorViewer.prototype.mascaraAnnotation = function(annotation) {     
+    AnnotatorViewer.prototype.mascaraAnnotation = function(annotation) {  
+  
       if (!annotation.data_creacio) annotation.data_creacio = $.now();
 
-      var anotacio_compartida = "";      
+      var shared_annotation = "";      
       var class_label = "label";
-      var borrar = "<img src=\"../src/img/icono_eliminar.png\" class=\"annotator-viewer-delete\" title=\""+ i18n_dict.Delete +"\" style=\" float:right;margin-top:3px;\"/>";
+      var delete_icon = "<img src=\""+IMAGE_DELETE+"\" class=\"annotator-viewer-delete\" title=\""+ i18n_dict.Delete +"\" style=\" float:right;margin-top:3px;;margin-left:3px\"/><img src=\"../src/img/edit-icon.png\"   class=\"annotator-viewer-edit\" title=\"Edit\" style=\"float:right;margin-top:3px\"/>";
       
       if (annotation.estat==1 || annotation.permissions.read.length===0 ) {
-        anotacio_compartida = "<img src=\"../src/img/Compartido.png\" title=\""+ i18n_dict.share +"\" style=\"margin-left:5px\"/>"
+        shared_annotation = "<img src=\""+SHARED_ICON+"\" title=\""+ i18n_dict.share +"\" style=\"margin-left:5px\"/>"
       }
 
       if (annotation.propietary==0) {
         class_label = "label-compartit";
-        borrar="";
+        delete_icon="";
         }
 
         //If you have instal.led a plug-in for categorize anotations, panel viewer can get this information with the category atribute
@@ -171,7 +242,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
         anotation_color = "hightlight";
       }
       var textAnnotation = this.removeTags('iframe',annotation.text);
-      var annotation_layer =  '<div class="annotator-marginviewer-text"><div class="'+anotation_color+' anotator_color_box"></div><div class="anotador_text">'+  textAnnotation  + '</div></div><div class="annotator-marginviewer-text">'+ $.format.date(annotation.data_creacio, "dd/MM/yyyy HH:mm:ss") + '</div><div class="annotator-marginviewer-quote">'+ annotation.quote + '</div><div class="annotator-marginviewer-footer"><span class="'+class_label+'">' + annotation.user + '</span>'+anotacio_compartida+borrar+'</div>';
+      var annotation_layer =  '<div class="annotator-marginviewer-text"><div class="'+anotation_color+' anotator_color_box"></div>';
+      annotation_layer += '<div class="anotador_text">'+  textAnnotation  + '</div></div><div class="annotator-marginviewer-date">'+ $.format.date(annotation.data_creacio, "dd/MM/yyyy HH:mm:ss") + '</div><div class="annotator-marginviewer-quote">'+ annotation.quote + '</div><div class="annotator-marginviewer-footer"><span class="'+class_label+'">' + annotation.user + '</span>'+shared_annotation+delete_icon+'</div>';
+      
+
+
       return annotation_layer;
     };
 
@@ -186,6 +261,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
      var anotation_reference = null;
      var data_owner = "me";
      var data_type = "";
+     var myAnnotation=false;
 
       if (annotation.id != null) {
         anotation_reference = "annotation-"+annotation.id;
@@ -199,8 +275,15 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
         anotation_reference = "annotation-"+annotation.id;
       }
 
-      if (annotation.estat==1 || annotation.permissions.read.length===0 ) data_type = "shared";
-      if (annotation.propietary==0) data_owner = "";
+      if (annotation.estat==1 || annotation.permissions.read.length===0 ) {
+        data_type = "shared";
+       
+      }
+      if (annotation.propietary==0) {
+        data_owner = "";
+      } else {
+         myAnnotation=true;
+      }
 
       var annotation_layer =  '<li class="annotator-marginviewer-element '+data_type+' '+data_owner+'" id="'+anotation_reference +'">'+this.mascaraAnnotation(annotation)+'</li>';
       var malert = i18n_dict.anotacio_lost
@@ -239,6 +322,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
             "border-width":"0px"});
         }
       });
+
 
       
       //Adding annotation to data element for delete and link

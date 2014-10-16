@@ -198,7 +198,7 @@ body {
         background-color: #fbed20;
 }
 
-.annotator-marginviewer-text {
+.annotator-marginviewer-text, .annotator-marginviewer-date {
     border-bottom: 1px solid #cccccc;
     background-color: #f5f5f5;
     padding: 0.5em;
@@ -207,6 +207,10 @@ body {
     line-height: 1.5em;
   
       
+}
+
+.panelTextArea {
+    width:96%;
 }
 
 .annotator-marginviewer-quote {
@@ -236,6 +240,22 @@ body {
     /* MSIE */
     filter: progid:DXImageTransform.Microsoft.Gradient(
                 StartColorStr='#fef8cd', EndColorStr='#f6edb5', GradientType=0);
+}
+
+.annotator-panel-save, .annotator-panel-cancel {
+    position: relative;
+    display: inline-block;
+    padding: 0 12px 0 12px;
+    color: #363636;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.75);
+    text-decoration: none;
+    line-height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    border: 1px solid #a2a2a2;
+    background-color: #d4d4d4;
+    border-radius: 5px;
+    margin-right: 3px;
 }
 /*
     =======================================
@@ -1872,3 +1892,4 @@ aside {
         border-radius: 0;
     }
 }
+
