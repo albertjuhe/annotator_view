@@ -61,6 +61,9 @@ The annotations that you create are displayed in the panel. You can delete an an
 
 You can filters annotations: My annotations and shared annotations.
 
+#Release 1.10
+- Edit text annotation in the panel.
+
 ##Development
 
 The view annoator plugin, use the property categorize, to change the annotation color category (default value highligth, defined in the css), and an order property to sort the annotations in the panel.
