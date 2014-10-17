@@ -141,11 +141,13 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
         if ($('li#annotation-'+item.id).find('textarea.panelTextArea').length==0) {
           var content = item.text;
           var editableTextArea = $("<textarea class='panelTextArea'>"+content+"</textarea>");
+          var annotationCSSReference = 'li#annotation-'+item.id+' > div.annotator-marginviewer-text';
+
           annotator_textArea.replaceWith(editableTextArea);
           editableTextArea.css('height',editableTextArea[0].scrollHeight + 'px');
           editableTextArea.blur(); //Textarea blur
           $('<div class="annotator-textarea-controls"></div>').insertAfter(editableTextArea); 
-          var control_buttons = $('.annotator-textarea-controls');
+          var control_buttons = $( annotationCSSReference + '> .annotator-textarea-controls');
           $('<a href="#save" class="annotator-panel-save">Save</a>').appendTo(control_buttons).bind("click",{annotation:item},this.onSavePanel);
           $('<a href="#cancel" class="annotator-panel-cancel">Cancel</a>').appendTo(control_buttons).bind("click", {annotation:item},this.onCancelPanel);
         }
