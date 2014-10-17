@@ -146,12 +146,27 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
           annotator_textArea.replaceWith(editableTextArea);
           editableTextArea.css('height',editableTextArea[0].scrollHeight + 'px');
           editableTextArea.blur(); //Textarea blur
+          if (typeof(this.annotator.plugins.RichEditor)!= 'undefined') {
+            this.tinymceActivation(annotationCSSReference +' > textarea.panelTextArea' );
+          }
           $('<div class="annotator-textarea-controls"></div>').insertAfter(editableTextArea); 
           var control_buttons = $( annotationCSSReference + '> .annotator-textarea-controls');
           $('<a href="#save" class="annotator-panel-save">Save</a>').appendTo(control_buttons).bind("click",{annotation:item},this.onSavePanel);
           $('<a href="#cancel" class="annotator-panel-cancel">Cancel</a>').appendTo(control_buttons).bind("click", {annotation:item},this.onCancelPanel);
         }
     };
+
+      AnnotatorViewer.prototype.tinymceActivation = function(selector) {
+            tinymce.init({
+              selector: selector,
+              plugins: "media image insertdatetime link paste",
+              menubar: false,
+              statusbar: false,             
+              toolbar_items_size: 'small',
+              extended_valid_elements : "",
+              toolbar: "undo redo bold italic alignleft aligncenter alignright alignjustify | link image media",
+            });
+    }
 
     //Event triggered when save the content of the annotation
     AnnotatorViewer.prototype.onSavePanel = function(event) {
