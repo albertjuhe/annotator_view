@@ -27,6 +27,8 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
     <!-- anotator plug in -->
     <script src="../src/view_annotator.js"></script>
     <script src="../src/categories.js"></script>
+    <script src="../lib/tinymce/tinymce.min.js"></script>
+    <script src="../src/richEditor.js"></script>
     <script>
       jQuery(function ($) {
                    $.i18n.load(i18n_dict);
@@ -44,6 +46,7 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
                      showViewPermissionsCheckbox: true,
                      showEditPermissionsCheckbox: false
                     });
+                  $('body').annotator().annotator('addPlugin', 'RichEditor');
                   $('body').annotator().annotator('addPlugin', 'Categories',{
                            errata:'annotator-hl-errata',
                            destacat:'annotator-hl-destacat',
@@ -64,6 +67,9 @@ You can filters annotations: My annotations and shared annotations.
 #Release 1.10
 - Edit text annotation in the panel.
 
+#Release 1.12
+- Edit text annotation panel with tinymce
+
 ##Development
 
 The view annoator plugin, use the property categorize, to change the annotation color category (default value highligth, defined in the css), and an order property to sort the annotations in the panel.
@@ -71,7 +77,9 @@ The view annoator plugin, use the property categorize, to change the annotation 
 Each annotation in the right panel needs a unique Id, annotator when use a back end, a unique Id is assigned to each annotation after creation, but in the Viewer panel offline I don have this Id, for this reason  we generate the unique Id with a function uniqueId() in the plugin.
 
 ##Offline Demo
-Demo in demo/anotacions.html
+- Demo in demo/anotacions.html
+- Demo in demo_tinymce/annotation.html
+
 ##Online Demo
 Complete functional demo with MySQL Backend and developed in nodejs
 [Demo Frankenstein](http://ec2-54-191-181-65.us-west-2.compute.amazonaws.com:3060/annotation/mary/demo.html) with [https://github.com/albertjuhe/annotator_nodejs_store] (https://github.com/albertjuhe/annotator_nodejs_store)
