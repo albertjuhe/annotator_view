@@ -140,16 +140,16 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
         //First we have to get the text, if no, we will have an empty text area after replace the div 
         if ($('li#annotation-'+item.id).find('textarea.panelTextArea').length==0) {
           var content = item.text;
-          var editableTextArea = $("<textarea class='panelTextArea'>"+content+"</textarea>");
+          var editableTextArea = $("<textarea id='textarea-"+item.id+"'' class='panelTextArea'>"+content+"</textarea>");
           var annotationCSSReference = 'li#annotation-'+item.id+' > div.annotator-marginviewer-text';
 
           annotator_textArea.replaceWith(editableTextArea);
           editableTextArea.css('height',editableTextArea[0].scrollHeight + 'px');
           editableTextArea.blur(); //Textarea blur
           if (typeof(this.annotator.plugins.RichEditor)!= 'undefined') {
-            this.tinymceActivation(annotationCSSReference +' > textarea.panelTextArea' );
+            this.tinymceActivation(annotationCSSReference +' > textarea#textarea-'+item.id );
           }
-          $('<div class="annotator-textarea-controls"></div>').insertAfter(editableTextArea); 
+          $('<div class="annotator-textarea-controls annotator-editor"></div>').insertAfter(editableTextArea); 
           var control_buttons = $( annotationCSSReference + '> .annotator-textarea-controls');
           $('<a href="#save" class="annotator-panel-save">Save</a>').appendTo(control_buttons).bind("click",{annotation:item},this.onSavePanel);
           $('<a href="#cancel" class="annotator-panel-cancel">Cancel</a>').appendTo(control_buttons).bind("click", {annotation:item},this.onCancelPanel);
@@ -170,30 +170,53 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
     //Event triggered when save the content of the annotation
     AnnotatorViewer.prototype.onSavePanel = function(event) {
-       var current_annotation = event.data.annotation;
-       var textarea =  $('li#annotation-'+current_annotation.id).find('textarea.panelTextArea');
-       current_annotation.text =  textarea.val();
-       this.annotator.updateAnnotation(current_annotation);
-       this.normalEditor(current_annotation,textarea);
+  
+      var current_annotation = event.data.annotation;
+      var textarea = $('li#annotation-'+current_annotation.id).find("#textarea-"+current_annotation.id);
+      if (typeof(this.annotator.plugins.RichEditor)!='undefined') {
+        current_annotation.text = tinymce.activeEditor.getContent();
+        tinymce.remove("#textarea-"+current_annotation.id);
+        tinymce.activeEditor.setContent(current_annotation.text);
+      } else {
+        current_annotation.text = textarea.val();  
+        //this.normalEditor(current_annotation,textarea);     
+     }
+      var anotation_reference = "annotation-"+current_annotation.id;
+      $('#'+anotation_reference).data('annotation', current_annotation);     
+    
+      this.annotator.updateAnnotation(current_annotation);      
     };
 
      //Event triggered when save the content of the annotation
     AnnotatorViewer.prototype.onCancelPanel = function(event) {
-        var current_annotation = event.data.annotation;
-        var textarea =  $('li#annotation-'+current_annotation.id).find('textarea.panelTextArea');
+      var current_annotation = event.data.annotation;
+      var styleHeight = 'style="height:12px"';
+      if (current_annotation.text.length>0) styleHeight = '';
+
+      if (typeof(this.annotator.plugins.RichEditor)!='undefined') {
+        tinymce.remove("#textarea-"+current_annotation.id);
+     
+        var textAnnotation = '<div class="anotador_text" '+styleHeight+'>' + current_annotation.text + '</div>';
+        var anotacio_capa =  '<div class="annotator-marginviewer-text"><div class="'+current_annotation.category+' anotator_color_box"></div>'+ textAnnotation  + '</div>';
+        var textAreaEditor = $('li#annotation-'+current_annotation.id + ' > .annotator-marginviewer-text');
+       
+        textAreaEditor.replaceWith(anotacio_capa);
+      } else {
+        var textarea = $('li#annotation-'+current_annotation.id).find('textarea.panelTextArea');
         this.normalEditor(current_annotation,textarea);
+      }
 
     };
 
-    //Annotator in a non editable state
+       //Annotator in a non editable state
     AnnotatorViewer.prototype.normalEditor = function(annotation,editableTextArea) {
-
-        var buttons = $('li#annotation-'+annotation.id).find('div.annotator-textarea-controls');
-        var textAnnotation = this.removeTags('iframe',annotation.text);
-
-        editableTextArea.replaceWith('<div class="anotador_text">'+textAnnotation+'</div>');
-        buttons.remove();
+      var buttons = $('li#annotation-'+annotation.id).find('div.annotator-textarea-controls');
+      var textAnnotation = this.removeTags('iframe',annotation.text);
+      editableTextArea.replaceWith('<div class="anotador_text">'+textAnnotation+'</div>');
+      buttons.remove();
     };
+
+   
 
      AnnotatorViewer.prototype.onDeleteMouseover = function(event) {
        $(event.target).attr('src',IMAGE_DELETE_OVER);
@@ -258,7 +281,7 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
       } else {
         anotation_color = "hightlight";
       }
-      var textAnnotation = this.removeTags('iframe',annotation.text);
+      var textAnnotation = annotation.text;
       var annotation_layer =  '<div class="annotator-marginviewer-text"><div class="'+anotation_color+' anotator_color_box"></div>';
       annotation_layer += '<div class="anotador_text">'+  textAnnotation  + '</div></div><div class="annotator-marginviewer-date">'+ $.format.date(annotation.data_creacio, "dd/MM/yyyy HH:mm:ss") + '</div><div class="annotator-marginviewer-quote">'+ annotation.quote + '</div><div class="annotator-marginviewer-footer"><span class="'+class_label+'">' + annotation.user + '</span>'+shared_annotation+delete_icon+'</div>';
       
