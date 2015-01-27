@@ -73,12 +73,14 @@ You can filters annotations: My annotations and shared annotations.
 ##Development
 
 The view annoator plugin, use the property categorize, to change the annotation color category (default value highligth, defined in the css), and an order property to sort the annotations in the panel.
-
 Each annotation in the right panel needs a unique Id, annotator when use a back end, a unique Id is assigned to each annotation after creation, but in the Viewer panel offline I don have this Id, for this reason  we generate the unique Id with a function uniqueId() in the plugin.
+
+Experimenting with a Full Text Search using lunr.js, new plug-in called searh.js that uses this library with the panel viewer to serach inside the annotations.
 
 ##Offline Demo
 - Demo in demo/anotacions.html
 - Demo in demo_tinymce/annotation.html
+- Demo in demo_search/annotations.html
 
 ##Online Demo
 Complete functional demo with MySQL Backend and developed in nodejs
