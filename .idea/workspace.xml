@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1d80f5a-839c-4bb8-b516-1cf2b8fee166" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/plug_in_visor_anotacions.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
+    <ignored path="plug_in_visor_anotacions.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="plug_in_visor_anotacions" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="anotacions.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo_search/anotacions.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-119.0" vertical-offset="0" max-vertical-offset="3502">
+              <caret line="182" column="45" selection-start-line="182" selection-start-column="45" selection-end-line="182" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.4" vertical-offset="424" max-vertical-offset="32521">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/search.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2261">
+              <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.38752785" vertical-offset="1016" max-vertical-offset="1615">
+              <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="view_annotator.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view_annotator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="7.48" vertical-offset="816" max-vertical-offset="6817">
+              <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1422356675435" expanded="false" signature="11447:11473" placeholder="..." />
+                <marker date="1422356675435" expanded="true" signature="13118:13140" placeholder="..." />
+                <marker date="1422356675435" expanded="true" signature="13452:13483" placeholder="..." />
+                <marker date="1422356675435" expanded="true" signature="13566:13576" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="true" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/demo_search/anotacions.html" />
+        <option value="$PROJECT_DIR$/src/view_annotator.js" />
+        <option value="$PROJECT_DIR$/src/search.js" />
+        <option value="$PROJECT_DIR$/src/css/style.css" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="width" value="1378" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>JSValidateTypes</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plug_in_visor_anotacions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plug_in_visor_anotacions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plug_in_visor_anotacions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plug_in_visor_anotacions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plug_in_visor_anotacions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plug_in_visor_anotacions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plug_in_visor_anotacions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plug_in_visor_anotacions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plug_in_visor_anotacions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plug_in_visor_anotacions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plug_in_visor_anotacions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo_tinymce" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="LayoutCode.rearrangeEntriesHTML" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="RestoreUpdateTree">
+    <UpdateInfo date="Moments ago" ActionInfo="_Update">
+      <UpdatedFiles>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated from server" />
+          <option name="myStatusName" value="Changed on server" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CHANGED_ON_SERVER" />
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Updated" />
+            <option name="myStatusName" value="Changed" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="UPDATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Created" />
+            <option name="myStatusName" value="Created" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="CREATED" />
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/demo_search/anotacions.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/.gitignore</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/.travis.yml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/CHANGELOG.mdown</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/CNAME</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/CONTRIBUTING.mdown</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/LICENSE</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/Makefile</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/README.mdown</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/VERSION</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/bower.json</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/build/bower.json.template</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/build/component.json.template</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/build/package.json.template</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/build/release.sh</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/build/wrapper_end</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/build/wrapper_start</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/component.json</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/docs/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/example/app.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/example/example_data.json</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/example/example_index.json</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/example/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/example/index_builder.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/example/jquery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/example/mustache.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/example/require.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/example/templates/question_list.mustache</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/example/templates/question_view.mustache</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/example/text.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/document_store.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/event_emitter.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/index.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/lunr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/pipeline.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/sorted_set.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/stemmer.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/stop_word_filter.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/token_store.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/tokenizer.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/trimmer.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/utils.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lib/vector.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lunr.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/lunr.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/notes</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/package.json</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/document_store_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/env/bench.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/env/benchmark.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/env/jquery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/env/mustache.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/env/styles.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/fixtures/questions.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/foo_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/index_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/pipeline_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/set_index_of_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/sorted_set_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/stemmer_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/token_store_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/perf/vector_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/server.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/styles.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/env/augment.min.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/env/jquery.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/env/qunit.css</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/env/qunit.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/env/runner.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/event_emitter_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/fixtures/stemming_vocab.json</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/index.html</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/index_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/lunr_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/pipeline_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/runner.sh</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/search_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/serialisation_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/sorted_set_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/stemmer_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/stop_word_filter_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/store_node_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/store_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/test_helper.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/token_store_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/tokenizer_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/trimmer_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/lib/lunr.js-0.5.7/test/vector_test.js</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/src/search.js</PATH>
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Deleted" />
+            <option name="myStatusName" value="Deleted" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="true" />
+            <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          </FILE-GROUP>
+          <FILE-GROUP>
+            <option name="myUpdateName" value="Restored" />
+            <option name="myStatusName" value="Will be restored" />
+            <option name="mySupportsDeletion" value="false" />
+            <option name="myCanBeAbsent" value="false" />
+            <option name="myId" value="RESTORED" />
+          </FILE-GROUP>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Modified" />
+          <option name="myStatusName" value="Modified" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MODIFIED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Skipped" />
+          <option name="myStatusName" value="Skipped" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SKIPPED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with conflicts" />
+          <option name="myStatusName" value="Will be merged with conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_CONFLICTS" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with tree conflicts" />
+          <option name="myStatusName" value="Merged with tree conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged with property conflicts" />
+          <option name="myStatusName" value="Will be merged with property conflicts" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Merged" />
+          <option name="myStatusName" value="Will be merged" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="MERGED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Not in repository" />
+          <option name="myStatusName" value="Not in repository" />
+          <option name="mySupportsDeletion" value="true" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UNKNOWN" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally added" />
+          <option name="myStatusName" value="Locally added" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_ADDED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Locally removed" />
+          <option name="myStatusName" value="Locally removed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="LOCALLY_REMOVED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Switched" />
+          <option name="myStatusName" value="Switched" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="SWITCHED" />
+        </FILE-GROUP>
+      </UpdatedFiles>
+    </UpdateInfo>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.anotacions.html">
+    <configuration default="false" name="anotacions.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" uri="http://localhost:63342/plug_in_visor_anotacions/demo_search/anotacions.html">
+      <RunnerSettings RunnerId="JavascriptDebugRunner" />
+      <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaScriptRunConfigurationType" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.anotacions.html" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.anotacions.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1d80f5a-839c-4bb8-b516-1cf2b8fee166" name="Default" comment="" />
+      <created>1422347513729</created>
+      <updated>1422347513729</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Search">
+      <created>1422390741811</created>
+      <updated>1422390741811</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="0" width="1378" height="744" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24469821" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22512235" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20228384" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18269947" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20391516" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Search" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/search.js</url>
+          <line>21</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/demo_search/anotacions.html</url>
+          <line>193</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/demo_tinymce/annotations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6415094" vertical-offset="816" max-vertical-offset="1632">
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view_annotator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.48" vertical-offset="816" max-vertical-offset="6817">
+          <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1422356675435" expanded="false" signature="11447:11473" placeholder="..." />
+            <marker date="1422356675435" expanded="true" signature="13118:13140" placeholder="..." />
+            <marker date="1422356675435" expanded="true" signature="13452:13483" placeholder="..." />
+            <marker date="1422356675435" expanded="true" signature="13566:13576" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.4" vertical-offset="424" max-vertical-offset="32521">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_search/anotacions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-119.0" vertical-offset="0" max-vertical-offset="3502">
+          <caret line="182" column="45" selection-start-line="182" selection-start-column="45" selection-end-line="182" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1081" max-vertical-offset="2261">
+          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38752785" vertical-offset="1016" max-vertical-offset="1615">
+          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
