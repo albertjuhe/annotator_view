@@ -84,6 +84,6 @@ Experimenting with a Full Text Search using lunr.js, new plug-in called searh.js
 
 ##Online Demo
 Complete functional demo with MySQL Backend and developed in nodejs
-[Demo Frankenstein](http://ec2-54-191-181-65.us-west-2.compute.amazonaws.com:3060/annotation/mary/demo.html) with [https://github.com/albertjuhe/annotator_nodejs_store] (https://github.com/albertjuhe/annotator_nodejs_store)
+[Demo Frankenstein](http://ec2-35-164-12-68.us-west-2.compute.amazonaws.com:3060/annotation/mary/demo.html) with [https://github.com/albertjuhe/annotator_nodejs_store] (https://github.com/albertjuhe/annotator_nodejs_store)
 
 The panel in this demo is little different, in the red square you can see How many people is reading the document.
