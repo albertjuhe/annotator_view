@@ -1,11 +1,11 @@
 Margin Viewer for Annotator
 ==================
-##Margin viewer Annotator Plugin
+## Margin viewer Annotator Plugin
 
 view_annotator.js is a plugin for Annotator to view the current annotations in a panel in the right side.
 
 
-##Installation
+## Installation
 
 To use the tool you need to install the [Annotator plugin](https://github.com/okfn/annotator/) to annotate text. 
 
@@ -58,32 +58,32 @@ To use the tool you need to install the [Annotator plugin](https://github.com/ok
                });
   </script>
 ```
-##Usage
+## Usage
 
 The annotations that you create are displayed in the panel. You can delete an anotation, you can acces at the point of text that has been anotated, open an annotation, close an annotation, toggle the panel, scroll the panel if there are several annotations and a little label where you can view how many annotations are currently.
 
 You can filters annotations: My annotations and shared annotations.
 
-#Release 1.10
+# Release 1.10
 - Edit text annotation in the panel.
 
-#Release 1.12
+# Release 1.12
 - Edit text annotation panel with tinymce
 
-##Development
+## Development
 
 The view annoator plugin, use the property categorize, to change the annotation color category (default value highligth, defined in the css), and an order property to sort the annotations in the panel.
 Each annotation in the right panel needs a unique Id, annotator when use a back end, a unique Id is assigned to each annotation after creation, but in the Viewer panel offline I don have this Id, for this reason  we generate the unique Id with a function uniqueId() in the plugin.
 
 Experimenting with a Full Text Search using lunr.js, new plug-in called searh.js that uses this library with the panel viewer to serach inside the annotations.
 
-##Offline Demo
+## Offline Demo
 - Demo in demo/anotacions.html
 - Demo in demo_tinymce/annotation.html
 - Demo in demo_search/annotations.html
 
-##Online Demo
+## Online Demo
 Complete functional demo with MySQL Backend and developed in nodejs
-[Demo Frankenstein](http://ec2-35-164-12-68.us-west-2.compute.amazonaws.com:3060/annotation/mary/demo.html) with [https://github.com/albertjuhe/annotator_nodejs_store] (https://github.com/albertjuhe/annotator_nodejs_store)
+[Demo Frankenstein](http://ec2-35-164-12-68.us-west-2.compute.amazonaws.com:3060/annotation/mary/demo.html) with [https://github.com/albertjuhe/annotator_nodejs_store](https://github.com/albertjuhe/annotator_nodejs_store)
 
 The panel in this demo is little different, in the red square you can see How many people is reading the document.
